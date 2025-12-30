@@ -1,0 +1,139 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Dế Mèn Phiêu Lưu Ký",
+      "author": "Tô Hoài",
+      "price": 99000,
+      "category": "Thiếu nhi",
+      "image": "/images/sach-1.jpg",
+      "description": "Tác phẩm kinh điển dành cho thiếu nhi Việt Nam."
+    },
+    {
+      "id": 2,
+      "title": "Tuổi Trẻ Đáng Giá Bao Nhiêu",
+      "author": "Rosie Nguyễn",
+      "price": 120000,
+      "category": "Kỹ năng sống",
+      "image": "/images/sach-2.jpg",
+      "description": "Cuốn sách truyền cảm hứng cho người trẻ."
+    },
+    {
+      "id": 3,
+      "title": "Nhà Giả Kim",
+      "author": "Paulo Coelho",
+      "price": 89000,
+      "category": "Tiểu thuyết",
+      "image": "/images/sach-3.jpg",
+      "description": "Hành trình theo đuổi ước mơ và định mệnh."
+    },
+    {
+      "id": 4,
+      "title": "Đắc Nhân Tâm",
+      "author": "Dale Carnegie",
+      "price": 110000,
+      "category": "Kỹ năng sống",
+      "image": "/images/sach-4.jpg",
+      "description": "Nghệ thuật giao tiếp và ứng xử."
+    },
+    {
+      "id": 5,
+      "title": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "price": 135000,
+      "category": "Kinh doanh",
+      "image": "/images/sach-5.jpg",
+      "description": "Bí quyết thành công và làm giàu."
+    },
+    {
+      "id": 6,
+      "title": "Cha Giàu Cha Nghèo",
+      "author": "Robert Kiyosaki",
+      "price": 145000,
+      "category": "Tài chính",
+      "image": "/images/sach-6.jpg",
+      "description": "Tư duy tài chính cá nhân hiện đại."
+    },
+    {
+      "id": 7,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 159000,
+      "category": "Phát triển bản thân",
+      "image": "/images/sach-7.jpg",
+      "description": "Thay đổi nhỏ tạo nên thành công lớn."
+    },
+    {
+      "id": 8,
+      "title": "7 Thói Quen Hiệu Quả",
+      "author": "Stephen R. Covey",
+      "price": 175000,
+      "category": "Kỹ năng sống",
+      "image": "/images/sach-8.jpg",
+      "description": "Những nguyên tắc sống hiệu quả."
+    },
+    {
+      "id": 9,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "price": 320000,
+      "category": "Công nghệ",
+      "image": "/images/sach-9.jpg",
+      "description": "Viết code sạch và dễ bảo trì."
+    },
+    {
+      "id": 10,
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt",
+      "price": 350000,
+      "category": "Công nghệ",
+      "image": "/images/sach-10.jpg",
+      "description": "Tư duy của lập trình viên chuyên nghiệp."
+    },
+    {
+      "id": 11,
+      "title": "Harry Potter và Hòn Đá Phù Thủy",
+      "author": "J.K. Rowling",
+      "price": 145000,
+      "category": "Fantasy",
+      "image": "/images/sach-11.jpg",
+      "description": "Cuộc phiêu lưu đầu tiên của Harry Potter."
+    },
+    {
+      "id": 12,
+      "title": "Sherlock Holmes",
+      "author": "Arthur Conan Doyle",
+      "price": 155000,
+      "category": "Trinh thám",
+      "image": "/images/sach-12.jpg",
+      "description": "Những vụ án kinh điển của thám tử Sherlock."
+    },
+    {
+      "id": 13,
+      "title": "Tôi Tài Giỏi, Bạn Cũng Thế",
+      "author": "Adam Khoo",
+      "price": 125000,
+      "category": "Giáo dục",
+      "image": "/images/sach-13.jpg",
+      "description": "Phương pháp học tập hiệu quả."
+    },
+    {
+      "id": 14,
+      "title": "Không Gia Đình",
+      "author": "Hector Malot",
+      "price": 98000,
+      "category": "Văn học",
+      "image": "/images/sach-14.jpg",
+      "description": "Câu chuyện cảm động về tình người."
+    },
+    {
+      "id": 15,
+      "title": "Bố Già",
+      "author": "Mario Puzo",
+      "price": 180000,
+      "category": "Tiểu thuyết",
+      "image": "/images/sach-15.jpg",
+      "description": "Tác phẩm kinh điển về thế giới mafia."
+    }
+  ]
+}
