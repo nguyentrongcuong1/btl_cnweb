@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
+import Navbar from "../components/layout/Navbar";
+import Banner from "../components/layout/Banner";
+import BookList from "../components/books/BookList";
+import Footer from "../components/layout/Footer";
 import { getBooks } from "../services/bookService";
-import BookCard from "../components/BookCard";
 
 const Home = () => {
   const [books, setBooks] = useState([]);
@@ -10,16 +13,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="container mt-5">
-      <h2 className="mb-4">Các Quyển Sách Hay</h2>
-      <div className="row">
-        {books.map((book) => (
-          <div className="col-md-3 mb-4" key={book.id}>
-            <BookCard book={book} />
-          </div>
-        ))}
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <Banner />
+      <BookList books={books} />
+      <Footer />
+    </>
   );
 };
 
