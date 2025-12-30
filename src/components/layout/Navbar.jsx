@@ -3,12 +3,16 @@ import { IoSearchOutline } from "react-icons/io5";
 import { useCart } from "../../context/CartContext";
 import { Link } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
-import { IoTrashOutline, IoAddOutline, IoRemoveOutline } from "react-icons/io5"; // Import thêm icon
+import { IoTrashOutline, IoAddOutline, IoRemoveOutline } from "react-icons/io5";
+import { FaUserCircle, FaSignOutAlt } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+
 
 const Navbar = () => {
   // Lấy dispatch từ context để thực hiện hành động xóa/sửa
   const { state, dispatch } = useCart();
-
+  const navigate = useNavigate();
   const totalItems =
     state?.items?.reduce((sum, item) => sum + item.quantity, 0) || 0;
 
@@ -16,6 +20,8 @@ const Navbar = () => {
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   // Hàm xử lý tăng/giảm số lượng
   const updateQty = (id, currentQty, delta) => {
@@ -184,6 +190,44 @@ const Navbar = () => {
                   </>
                 )}
               </div>
+            </li>
+
+            <li className="nav-item ms-3 dropdown">
+              {currentUser ? (
+                <>
+                  <button className="btn border-0 d-flex align-items-center gap-1 dropdown-toggle" data-bs-toggle="dropdown">
+                    <FaUserCircle size={24} />
+                    <span className="d-none d-lg-inline">
+                      {currentUser.displayName}
+                    </span>
+                  </button>
+
+                  <ul className="dropdown-menu dropdown-menu-end shadow">
+                    <li>
+                      <button className="dropdown-item">
+                        Thông tin cá nhân
+                      </button>
+                      </li>
+                    <li><hr className="dropdown-divider" /></li>
+                    <li>
+                      <button className="dropdown-item text-danger" onClick={() => { 
+                          localStorage.removeItem("currentUser");
+                          window.location.reload();
+                        }}
+                      >
+                        <FaSignOutAlt className="me-2" />
+                        Đăng xuất
+                      </button>
+                    </li>
+                  </ul>
+                </>
+                ): (
+                <button className="btn border-0 d-flex align-items-center gap-1" onClick={() => navigate("/login")}           >
+                  <FaUserCircle size={22} />
+                  <span className="d-none d-lg-inline">Đăng nhập</span>
+                </button>
+                
+              )}
             </li>
           </ul>
         </div>
